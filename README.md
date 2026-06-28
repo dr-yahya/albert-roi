@@ -3,37 +3,34 @@
 Luxury perfume brand landing page — reached via QR code on product packaging.
 
 **Live site:** https://dr-yahya.github.io/albert-roi/  
-**Vercel mirror:** https://albert-roi.vercel.app  
-**Custom domain (pending DNS):** https://albert-roi.ae.kg/
+**Custom domain:** https://albert-roi.com/
 
-## Custom domain setup
+## Domain setup (GitHub Pages)
 
-The repo is configured for `albert-roi.ae.kg`. Complete these steps to activate it:
+The repo `CNAME` file is set to `albert-roi.com`. At your domain registrar, add:
 
-### 1. Free DNS — Hurricane Electric
+### Apex domain (`albert-roi.com`)
 
-1. Create a free account at [dns.he.net](https://dns.he.net/)
-2. **Add a new domain** → enter `albert-roi.ae.kg`
-3. Add a **CNAME** record:
-   - **Name:** `@`
-   - **Target:** `dr-yahya.github.io`
-4. Note your nameservers: `ns1.he.net`, `ns2.he.net` (and `ns3`–`ns5` if shown)
+```
+A    @    185.199.108.153
+A    @    185.199.109.153
+A    @    185.199.110.153
+A    @    185.199.111.153
+```
 
-### 2. Register subdomain — Kevin Service
+### Optional `www`
 
-1. Sign in at [registry.kevsrv.me](https://registry.kevsrv.me) (Google login works)
-2. **Register Domain** → search `albert-roi` under `.ae.kg`
-3. Enter Hurricane Electric nameservers from step 1
-4. Purpose: brand landing page for open-source perfume project  
-   GitHub repo: `https://github.com/dr-yahya/albert-roi`
+```
+CNAME    www    dr-yahya.github.io
+```
 
-### 3. GitHub Pages
+### GitHub Pages
 
 1. Open [Pages settings](https://github.com/dr-yahya/albert-roi/settings/pages)
-2. **Custom domain:** `albert-roi.ae.kg` → Save
-3. Wait for DNS check (up to 24 h), then enable **Enforce HTTPS**
+2. **Custom domain:** `albert-roi.com` → Save
+3. Wait for DNS verification, then enable **Enforce HTTPS**
 
-The `CNAME` file in this repo is already set. QR codes in `qr/` point to **https://albert-roi.vercel.app/**.
+QR codes in `qr/` point to **https://albert-roi.com/**.
 
 ## Local preview
 
