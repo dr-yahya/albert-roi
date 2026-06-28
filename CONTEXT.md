@@ -2,8 +2,6 @@
 
 A luxury perfume brand with distinct masculine and feminine lines. This repository hosts the brand's public-facing website — a landing page reached via QR code on product packaging.
 
-**Live site:** https://dr-yahya.github.io/albert-roi/
-
 ## Language
 
 **Brand Landing Page**:
@@ -67,5 +65,3 @@ _Avoid_: Light theme, white background, minimal flat design
 **Packaging QR Code**:
 A scannable QR code linking to the live GitHub Pages URL. Delivered as both PNG (1000×1000 px, print-ready) and SVG (infinitely scalable). Standard black-on-white for reliable scanning.
 _Avoid_: Barcode, UPC, styled QR, gold-on-black QR
-
-Files: `qr/albert-roi-qr.png` and `qr/albert-roi-qr.svg`
