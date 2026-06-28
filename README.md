@@ -3,6 +3,7 @@
 Luxury perfume brand landing page — reached via QR code on product packaging.
 
 **Live site:** https://dr-yahya.github.io/albert-roi/  
+**Vercel mirror:** https://albert-roi.vercel.app  
 **Custom domain (pending DNS):** https://albert-roi.ae.kg/
 
 ## Custom domain setup
