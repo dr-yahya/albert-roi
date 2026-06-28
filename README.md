@@ -33,7 +33,7 @@ The repo is configured for `albert-roi.ae.kg`. Complete these steps to activate 
 2. **Custom domain:** `albert-roi.ae.kg` → Save
 3. Wait for DNS check (up to 24 h), then enable **Enforce HTTPS**
 
-The `CNAME` file in this repo is already set. QR codes in `qr/` point to the new domain.
+The `CNAME` file in this repo is already set. QR codes in `qr/` point to **https://albert-roi.vercel.app/**.
 
 ## Local preview
 

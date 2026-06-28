@@ -67,5 +67,5 @@ _Avoid_: Light theme, white background, minimal flat design
 ## QR Code
 
 **Packaging QR Code**:
-A scannable QR code linking to `https://albert-roi.ae.kg/`. Delivered as both PNG (1000×1000 px, print-ready) and SVG (infinitely scalable). Standard black-on-white for reliable scanning.
+A scannable QR code linking to `https://albert-roi.vercel.app/`. Delivered as both PNG (1000×1000 px, print-ready) and SVG (infinitely scalable). Standard black-on-white for reliable scanning.
 _Avoid_: Barcode, UPC, styled QR, gold-on-black QR
