@@ -1,71 +1,47 @@
 # Albert Roi
 
-A luxury perfume brand with distinct masculine and feminine lines. This repository hosts the brand's public-facing website — a landing page reached via QR code on product packaging.
+Luxury perfume brand landing page — reached via QR code on product packaging.
 
-**Live site:** https://dr-yahya.github.io/albert-roi/
+**Live site:** https://dr-yahya.github.io/albert-roi/  
+**Custom domain (pending DNS):** https://albert-roi.ae.kg/
 
-## Language
+## Custom domain setup
 
-**Brand Landing Page**:
-A single-page website that introduces the Albert Roi brand through hero imagery, story, and fragrance notes. It does not sell products or process payments.
-_Avoid_: Product catalog, e-commerce site, shop
+The repo is configured for `albert-roi.ae.kg`. Complete these steps to activate it:
 
-**Variant**:
-One of the two Albert Roi fragrance lines — masculine (black & gold) or feminine (white & gold). Both variants share one landing page as equal sections.
-_Avoid_: SKU, product, flavor
+### 1. Free DNS — Hurricane Electric
 
-**Masculine Variant**:
-The black-and-gold Albert Roi line, identified by the crowned torso emblem.
-_Avoid_: For men, men's edition, Him
+1. Create a free account at [dns.he.net](https://dns.he.net/)
+2. **Add a new domain** → enter `albert-roi.ae.kg`
+3. Add a **CNAME** record:
+   - **Name:** `@`
+   - **Target:** `dr-yahya.github.io`
+4. Note your nameservers: `ns1.he.net`, `ns2.he.net` (and `ns3`–`ns5` if shown)
 
-**Feminine Variant**:
-The white-and-gold Albert Roi line, identified by the flowing-hair queen emblem.
-_Avoid_: For women, women's edition, Her
+### 2. Register subdomain — Kevin Service
 
-## Site Content
+1. Sign in at [registry.kevsrv.me](https://registry.kevsrv.me) (Google login works)
+2. **Register Domain** → search `albert-roi` under `.ae.kg`
+3. Enter Hurricane Electric nameservers from step 1
+4. Purpose: brand landing page for open-source perfume project  
+   GitHub repo: `https://github.com/dr-yahya/albert-roi`
 
-**Site Language**:
-English only. No Arabic translation or language toggle.
-_Avoid_: Bilingual, multilingual, i18n
+### 3. GitHub Pages
 
-**Page Copy**:
-All brand story and fragrance notes are AI-generated from the product imagery and brand identity. Copy may be revised later but ships with generated text.
-_Avoid_: Placeholder, lorem ipsum, user-supplied copy
+1. Open [Pages settings](https://github.com/dr-yahya/albert-roi/settings/pages)
+2. **Custom domain:** `albert-roi.ae.kg` → Save
+3. Wait for DNS check (up to 24 h), then enable **Enforce HTTPS**
 
-**Contact**:
-The landing page includes no contact information, social links, or purchase paths. It is storytelling only.
-_Avoid_: Footer links, WhatsApp, Instagram, email
+The `CNAME` file in this repo is already set. QR codes in `qr/` point to the new domain.
 
-## Deployment
+## Local preview
 
-**Hosting**:
-The site is deployed as a static site on GitHub Pages from the `dr-yahya/albert-roi` repository.
-_Avoid_: Vercel, Netlify, Cloudflare Pages, self-hosted
+```bash
+python3 -m http.server 8080
+```
 
-## Page Structure
+Open http://localhost:8080
 
-**Hero**:
-Full-screen opening section with the Albert Roi name, tagline, and subtle animation. First thing seen after scanning the QR code.
-_Avoid_: Banner, header image, splash screen
+## Project docs
 
-**Brand Story**:
-A short narrative section on the Albert Roi identity — royalty, strength, and elegance — placed between the hero and the variant sections.
-_Avoid_: About us, our story, mission statement
-
-**Variant Section**:
-A dedicated block on the landing page for one fragrance line: product photo, AI-generated description, and fragrance notes.
-_Avoid_: Product card, SKU block, catalog entry
-
-## Visual Design
-
-**Site Theme**:
-Dark luxury — black background with gold typography and accents throughout. The feminine variant section uses white and gold as contrast within the dark page.
-_Avoid_: Light theme, white background, minimal flat design
-
-## QR Code
-
-**Packaging QR Code**:
-A scannable QR code linking to the live GitHub Pages URL. Delivered as both PNG (1000×1000 px, print-ready) and SVG (infinitely scalable). Standard black-on-white for reliable scanning.
-_Avoid_: Barcode, UPC, styled QR, gold-on-black QR
-
-Files: `qr/albert-roi-qr.png` and `qr/albert-roi-qr.svg`
+Domain and product terminology: [CONTEXT.md](./CONTEXT.md)

@@ -40,6 +40,10 @@ _Avoid_: Footer links, WhatsApp, Instagram, email
 The site is deployed as a static site on GitHub Pages from the `dr-yahya/albert-roi` repository.
 _Avoid_: Vercel, Netlify, Cloudflare Pages, self-hosted
 
+**Custom Domain**:
+The public URL `albert-roi.ae.kg`, a free subdomain registered via Kevin Service Registry and resolved through Hurricane Electric DNS.
+_Avoid_: Freenom, .tk, .ml, paid domain
+
 ## Page Structure
 
 **Hero**:
@@ -63,5 +67,5 @@ _Avoid_: Light theme, white background, minimal flat design
 ## QR Code
 
 **Packaging QR Code**:
-A scannable QR code linking to the live GitHub Pages URL. Delivered as both PNG (1000×1000 px, print-ready) and SVG (infinitely scalable). Standard black-on-white for reliable scanning.
+A scannable QR code linking to `https://albert-roi.ae.kg/`. Delivered as both PNG (1000×1000 px, print-ready) and SVG (infinitely scalable). Standard black-on-white for reliable scanning.
 _Avoid_: Barcode, UPC, styled QR, gold-on-black QR
