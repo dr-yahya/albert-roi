@@ -31,7 +31,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: |
+            index.html
+            css
+            assets
+            robots.txt
+            sitemap.xml
+            CNAME
+            .nojekyll
 
       - name: Deploy to GitHub Pages
         id: deployment

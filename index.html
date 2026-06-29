@@ -91,7 +91,37 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Critical styles — inlined so layout works even if cached CSS is stale */
+      body {
+        background: #080808;
+        margin: 0;
+        min-height: 100dvh;
+        overflow-x: hidden;
+      }
+
+      .seo-content {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+
+      .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100dvh;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css?v=2" />
   </head>
   <body>
     <div class="seo-content" aria-hidden="true">
