@@ -60,40 +60,59 @@
             }
           },
           {
-            "@type": "Product",
-            "@id": "https://albert-roi.com/#product-masculine",
-            "name": "Albert Roi Masculine Perfume",
-            "description": "The black-and-gold Albert Roi perfume line, defined by depth, strength, and a commanding presence.",
-            "brand": {
-              "@type": "Brand",
-              "name": "Albert Roi"
+            "@type": "WebPage",
+            "@id": "https://albert-roi.com/#webpage",
+            "url": "https://albert-roi.com/",
+            "name": "Albert Roi Perfume | Luxury Fragrance Collection",
+            "description": "Albert Roi perfume — a luxury fragrance house with two distinct lines. Discover the masculine black-and-gold and feminine white-and-gold Albert Roi perfumes.",
+            "isPartOf": {
+              "@id": "https://albert-roi.com/#website"
             },
-            "category": "Perfume",
-            "image": "https://albert-roi.com/assets/images/masculine-variant.png",
-            "offers": {
-              "@type": "Offer",
-              "url": "https://albert-roi.com/",
-              "availability": "https://schema.org/InStoreOnly",
-              "itemCondition": "https://schema.org/NewCondition"
+            "about": {
+              "@id": "https://albert-roi.com/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://albert-roi.com/#fragrance-collection"
             }
           },
           {
-            "@type": "Product",
-            "@id": "https://albert-roi.com/#product-feminine",
-            "name": "Albert Roi Feminine Perfume",
-            "description": "The white-and-gold Albert Roi perfume line, defined by grace, luminosity, and timeless elegance.",
-            "brand": {
-              "@type": "Brand",
-              "name": "Albert Roi"
-            },
-            "category": "Perfume",
-            "image": "https://albert-roi.com/assets/images/feminine-variant.png",
-            "offers": {
-              "@type": "Offer",
-              "url": "https://albert-roi.com/",
-              "availability": "https://schema.org/InStoreOnly",
-              "itemCondition": "https://schema.org/NewCondition"
-            }
+            "@type": "ItemList",
+            "@id": "https://albert-roi.com/#fragrance-collection",
+            "name": "Albert Roi Perfume Collection",
+            "description": "Two distinct Albert Roi luxury fragrance lines — masculine and feminine.",
+            "numberOfItems": 2,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Thing",
+                  "@id": "https://albert-roi.com/#masculine-variant",
+                  "name": "Albert Roi Masculine Perfume",
+                  "description": "The black-and-gold Albert Roi perfume line, defined by depth, strength, and a commanding presence.",
+                  "image": "https://albert-roi.com/assets/images/masculine-variant.png",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Albert Roi"
+                  }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Thing",
+                  "@id": "https://albert-roi.com/#feminine-variant",
+                  "name": "Albert Roi Feminine Perfume",
+                  "description": "The white-and-gold Albert Roi perfume line, defined by grace, luminosity, and timeless elegance.",
+                  "image": "https://albert-roi.com/assets/images/feminine-variant.png",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Albert Roi"
+                  }
+                }
+              }
+            ]
           }
         ]
       }
