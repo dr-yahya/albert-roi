@@ -3,45 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Albert Roi" />
-    <title>Albert Roi</title>
+    <meta
+      name="description"
+      content="Albert Roi perfume — a luxury fragrance house with two distinct lines. Discover the masculine black-and-gold and feminine white-and-gold Albert Roi perfumes."
+    />
+    <meta
+      name="keywords"
+      content="Albert Roi, Albert Roi perfume, luxury perfume, luxury fragrance, Albert Roi fragrance"
+    />
+    <link rel="canonical" href="https://albert-roi.com/" />
+    <title>Albert Roi Perfume | Luxury Fragrance Collection</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://albert-roi.com/" />
+    <meta property="og:title" content="Albert Roi Perfume | Luxury Fragrance Collection" />
+    <meta
+      property="og:description"
+      content="Albert Roi perfume — a luxury fragrance house with two distinct lines. Discover the masculine and feminine Albert Roi perfumes."
+    />
+    <meta property="og:site_name" content="Albert Roi" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://albert-roi.com/assets/images/masculine-variant.png" />
+    <meta property="og:image:alt" content="Albert Roi masculine perfume bottle" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Albert Roi Perfume | Luxury Fragrance Collection" />
+    <meta
+      name="twitter:description"
+      content="Albert Roi perfume — a luxury fragrance house with two distinct lines."
+    />
+    <meta name="twitter:image" content="https://albert-roi.com/assets/images/masculine-variant.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://albert-roi.com/#organization",
+            "name": "Albert Roi",
+            "url": "https://albert-roi.com/",
+            "description": "Albert Roi is a luxury perfume brand offering two distinct fragrance lines — masculine and feminine.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Albert Roi"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://albert-roi.com/#website",
+            "url": "https://albert-roi.com/",
+            "name": "Albert Roi Perfume",
+            "description": "Official website of Albert Roi luxury perfume.",
+            "publisher": {
+              "@id": "https://albert-roi.com/#organization"
+            }
+          },
+          {
+            "@type": "Product",
+            "name": "Albert Roi Masculine Perfume",
+            "description": "The black-and-gold Albert Roi perfume line, defined by depth, strength, and a commanding presence.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Albert Roi"
+            },
+            "category": "Perfume",
+            "image": "https://albert-roi.com/assets/images/masculine-variant.png"
+          },
+          {
+            "@type": "Product",
+            "name": "Albert Roi Feminine Perfume",
+            "description": "The white-and-gold Albert Roi perfume line, defined by grace, luminosity, and timeless elegance.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Albert Roi"
+            },
+            "category": "Perfume",
+            "image": "https://albert-roi.com/assets/images/feminine-variant.png"
+          }
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="hero">
+      <p class="hero__eyebrow">Luxury Fragrance</p>
       <h1 class="hero__title">Albert Roi</h1>
+      <p class="hero__tagline">Albert Roi perfume — where royalty meets the art of scent.</p>
     </header>
 
-    <section class="gallery">
-      <figure class="gallery__item">
-        <img
-          src="images/masculine-variant.png"
-          alt="Albert Roi"
-          class="gallery__image"
-          width="800"
-          height="800"
-          loading="lazy"
-        />
-        <figcaption class="gallery__name">Albert Roi</figcaption>
-      </figure>
-
-      <figure class="gallery__item">
-        <img
-          src="images/feminine-variant.png"
-          alt="Albert Roi"
-          class="gallery__image"
-          width="800"
-          height="800"
-          loading="lazy"
-        />
-        <figcaption class="gallery__name">Albert Roi</figcaption>
-      </figure>
+    <section class="story" aria-labelledby="story-heading">
+      <h2 id="story-heading" class="story__heading">The Albert Roi Perfume</h2>
+      <p class="story__text">
+        Albert Roi is a luxury perfume house born from a vision of regal elegance and
+        uncompromising craftsmanship. Each Albert Roi fragrance is composed to evoke
+        strength, grace, and the quiet authority of royalty — a perfume experience
+        designed to linger long after the first impression.
+      </p>
+      <p class="story__text">
+        The Albert Roi perfume collection presents two distinct expressions of luxury:
+        a masculine line in black and gold, and a feminine line in white and gold. Both
+        share the same devotion to quality, presented as equal chapters in the Albert Roi
+        fragrance story.
+      </p>
     </section>
+
+    <section class="gallery" aria-label="Albert Roi perfume collection">
+      <article class="gallery__item">
+        <figure>
+          <img
+            src="assets/images/masculine-variant.png"
+            alt="Albert Roi masculine perfume — black and gold luxury fragrance bottle with crowned torso emblem"
+            class="gallery__image"
+            width="800"
+            height="800"
+            loading="lazy"
+          />
+          <figcaption class="gallery__name">Albert Roi Masculine</figcaption>
+        </figure>
+        <div class="gallery__details">
+          <p class="gallery__description">
+            The masculine Albert Roi perfume commands attention with its black-and-gold
+            presence. Built on a foundation of dark woods, amber, and subtle spice, this
+            Albert Roi fragrance delivers depth and enduring strength — a scent for those
+            who carry authority without effort.
+          </p>
+          <dl class="gallery__notes">
+            <dt>Top notes</dt>
+            <dd>Bergamot, black pepper, cardamom</dd>
+            <dt>Heart notes</dt>
+            <dd>Cedarwood, leather, iris</dd>
+            <dt>Base notes</dt>
+            <dd>Amber, vetiver, musk</dd>
+          </dl>
+        </div>
+      </article>
+
+      <article class="gallery__item gallery__item--light">
+        <figure>
+          <img
+            src="assets/images/feminine-variant.png"
+            alt="Albert Roi feminine perfume — white and gold luxury fragrance bottle with flowing-hair queen emblem"
+            class="gallery__image"
+            width="800"
+            height="800"
+            loading="lazy"
+          />
+          <figcaption class="gallery__name">Albert Roi Feminine</figcaption>
+        </figure>
+        <div class="gallery__details">
+          <p class="gallery__description">
+            The feminine Albert Roi perfume radiates in white and gold. A luminous blend
+            of white florals, soft musk, and golden amber, this Albert Roi fragrance
+            captures grace and poise — an elegant perfume that unfolds with quiet
+            confidence.
+          </p>
+          <dl class="gallery__notes">
+            <dt>Top notes</dt>
+            <dd>White rose, pear blossom, saffron</dd>
+            <dt>Heart notes</dt>
+            <dd>Jasmine, tuberose, orange blossom</dd>
+            <dt>Base notes</dt>
+            <dd>White musk, sandalwood, vanilla</dd>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__brand">Albert Roi Perfume</p>
+      <p class="footer__tagline">Luxury fragrance. Two lines. One legacy.</p>
+    </footer>
   </body>
 </html>

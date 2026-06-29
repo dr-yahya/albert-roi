@@ -2,14 +2,38 @@
 
 Luxury perfume brand landing page — reached via QR code on product packaging.
 
-**Live site:** https://dr-yahya.github.io/albert-roi/  
-**Custom domain:** https://albert-roi.com/
+**Live site:** https://albert-roi.com/  
+**GitHub Pages:** https://dr-yahya.github.io/albert-roi/
 
-## Domain setup (GitHub Pages)
+## Project structure
 
-The repo `CNAME` file is set to `albert-roi.com`. At your domain registrar, add:
+```
+├── assets/
+│   ├── images/          # Product photography
+│   │   ├── masculine-variant.png
+│   │   └── feminine-variant.png
+│   └── packaging/       # Print-ready barcodes
+│       ├── qr.png / qr.svg
+│       ├── ean13-masculine.png / .svg
+│       └── ean13-feminine.png / .svg
+├── css/style.css
+├── index.html
+├── CNAME
+├── robots.txt
+└── sitemap.xml
+```
 
-### Apex domain (`albert-roi.com`)
+## Packaging assets
+
+| File | Use |
+|------|-----|
+| `assets/packaging/qr.png` | QR code → https://albert-roi.com/ |
+| `assets/packaging/ean13-masculine.*` | EAN-13 for black & gold box |
+| `assets/packaging/ean13-feminine.*` | EAN-13 for white & gold box |
+
+## Domain setup
+
+DNS records for `albert-roi.com`:
 
 ```
 A    @    185.199.108.153
@@ -18,19 +42,9 @@ A    @    185.199.110.153
 A    @    185.199.111.153
 ```
 
-### Optional `www`
+Optional `www`: `CNAME www dr-yahya.github.io`
 
-```
-CNAME    www    dr-yahya.github.io
-```
-
-### GitHub Pages
-
-1. Open [Pages settings](https://github.com/dr-yahya/albert-roi/settings/pages)
-2. **Custom domain:** `albert-roi.com` → Save
-3. Wait for DNS verification, then enable **Enforce HTTPS**
-
-QR codes in `qr/` point to **https://albert-roi.com/**.
+Enable the custom domain in [GitHub Pages settings](https://github.com/dr-yahya/albert-roi/settings/pages).
 
 ## Local preview
 
@@ -40,6 +54,6 @@ python3 -m http.server 8080
 
 Open http://localhost:8080
 
-## Project docs
+## Docs
 
-Domain and product terminology: [CONTEXT.md](./CONTEXT.md)
+Product terminology: [CONTEXT.md](./CONTEXT.md)

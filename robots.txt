@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://albert-roi.com/sitemap.xml
